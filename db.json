@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "JAYANTI THAKOR",
+      "email": "rwgn1.jayanti.rt@gmail.com",
+      "password": "123@pipl",
+      "role": "user",
+      "id": "FzC07lpo1S0"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Modern Velvet Sofa",
+      "description": "Elegant velvet sofa with a luxurious finish, perfect for modern living rooms.",
+      "price": 25999,
+      "category": "Furniture",
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7"
+    },
+    {
+      "id": "2",
+      "name": "Wooden Coffee Table",
+      "description": "Minimalist wooden coffee table crafted with premium quality material.",
+      "price": 7999,
+      "category": "Furniture",
+      "image": "https://images.unsplash.com/photo-1615874959474-d609969a20ed"
+    },
+    {
+      "name": "Decorative Wall Art",
+      "description": "Stylish wall art to enhance the beauty and vibe of your living space.",
+      "price": "2499",
+      "category": "Home Decor",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Luxury Floor Lamp",
+      "description": "Modern floor lamp with warm lighting to create a cozy atmosphere.",
+      "price": 3499,
+      "category": "Lighting",
+      "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

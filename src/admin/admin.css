@@ -1,0 +1,16 @@
+table{
+    margin: 4% auto;
+    width: 90%;
+}
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 9px;
+}
+table tr td img{
+    width: 80px;
+}
+td button{
+    margin: 0 15px;
+    background-color: green;
+}
