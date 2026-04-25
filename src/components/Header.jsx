@@ -1,12 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaHome } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './style.css';
 
 const Header = () => {
 
-  const user = JSON.parse(localStorage.getItem('homeAuraUser'));
+//  const [user,setUser] = useState(()=>{
+//   const userData =localStorage.getItem('homeAuraUser');
+//   return userData ? JSON.parse(userData) : [];
+//  }) 
 
+    const user = JSON.parse(localStorage.getItem('homeAuraUser'))
+
+
+   const logout = ()=>{
+    localStorage.removeItem('homeAuraUser');
+    window.location.reload();
+    alert('Logout successfully.!')
+  }
+
+
+
+  // if(user){
+  //   setRole(user.role);
+  // }
+  const navigate = useNavigate();
   return (
     <div className='header'>
       <div className="logo">
@@ -17,13 +35,13 @@ const Header = () => {
         <Link to='/products'>Products</Link>
         <Link to='/about'>About</Link>
         <Link to='/contact'>Contact</Link>
-        <Link to='/manage-products'>Admin</Link>
-       {
-        user ?  <button className='profile-btn'>{user.name[0]}</button>: <button className='login-btn'>Login</button>
-       }
+        {/* { user.role=== 'admin' && <Link to='/manage-products'>Admin</Link>} */}
+        {
+          user ?  <button className='login-btn' onClick={()=>logout()}>Logout</button>: <button className='login-btn' onClick={()=>navigate('/login')}>Login</button>
+        }
       </div>
     </div>
   )
-}
+} 
 
 export default Header

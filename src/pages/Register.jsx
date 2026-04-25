@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const Register = () => {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
 
-
   const navigate = useNavigate();
 
   const handleChange = (e)=>{

@@ -4,6 +4,13 @@
       "name": "JAYANTI THAKOR",
       "email": "rwgn1.jayanti.rt@gmail.com",
       "password": "123@pipl",
+      "role": "admin",
+      "id": "FzC07lpo1S0"
+    },
+    {
+      "name": "JAYANTI THAKOR",
+      "email": "jayantithakor941@gmail.com",
+      "password": "123@pipl",
       "role": "user",
       "id": "FzC07lpo1S0"
     }
@@ -40,6 +47,17 @@
       "price": 3499,
       "category": "Lighting",
       "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4"
+    }
+  ],
+  "orders": [
+    {
+      "name": "JAYANTI THAKOR",
+      "email": "rwgn1.jayanti.rt@gmail.com",
+      "address": "Balva",
+      "city": "Gandhinagar",
+      "zipcode": "382650",
+      "payment": "",
+      "id": "swusex93P2c"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

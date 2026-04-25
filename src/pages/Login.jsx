@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './main.css';
 
 const Login = () => {
 
@@ -15,7 +16,7 @@ const Login = () => {
       const res = await axios.get(`http://localhost:3000/users?email=${email}&password=${password}`);
 
       const users = res.data;
-      // console.log(users);
+      console.log(users);
 
       if(users.length > 0 ){
         const loginUser = users[0];
@@ -32,8 +33,11 @@ const Login = () => {
     }
   }
 
+ 
+
   return (
-    <div>
+    <div className="login-form">
+      <h1>Login</h1>
       <input type="text" name="email" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
       <input type="text" name="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
       <button onClick={handleSubmit}>Login</button>

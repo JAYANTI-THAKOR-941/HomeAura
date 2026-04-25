@@ -1,9 +1,12 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './main.css';
+import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
 
+
+  const navigate = useNavigate();
 
   const [products,setProducts] = useState([]);
 
@@ -36,7 +39,7 @@ const Products = () => {
                 <div className="bottom">
                   <p>{p.category}</p>
                   <div className="btn">
-                    <button>View Details</button>
+                    <button onClick={()=>navigate(`/product/${p.id}`)}>View Details</button>
                   </div>
                 </div>
               </div>
